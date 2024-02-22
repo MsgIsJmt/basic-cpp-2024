@@ -12,7 +12,7 @@ int main(void)
 {
 
     int& ref = FuncOne(10);       // ref = 30
-    ref = 10;                     // 이거 이상하다
+    ref = 10;                     // 이거 이상하다 
 
     return 0;
 }
