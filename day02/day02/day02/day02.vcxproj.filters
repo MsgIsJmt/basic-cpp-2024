@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DefaultValue1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DefaultValue2.cpp">
+    <ClCompile Include="222_8교시.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
