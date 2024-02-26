@@ -1,14 +1,13 @@
 #pragma once
 #include <iostream>
-/*
-C++ 클래스 : 클래스 멤버로 멤버 변수와 멤버 함수를 가진다
-*/
-class human { //human 구조체 => 내가 만든 사용자 정의 자료형
-public:
-	char name[20]; // 속성 멤버변수(name, age, job)
-	int age;
-	char job[20];
 
+class human {
+public:
+	char name[20];
+	int age;
+	int birth;
+	char job[20];
+public:
 	void showHuman()								// 기능: 멤버함수
 	{
 		printf("name: %s age: %d job: %s\n", name, age, job);
