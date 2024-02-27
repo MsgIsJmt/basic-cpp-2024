@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class AA {
+class AA {						// °´Ã¼ »ý¼º
 	int a;
 	int b;
 public:
@@ -10,7 +10,7 @@ public:
 		this->b = b;
 	}
 
-	AA(const AA& other) {
+	AA(const AA& other) {		// 
 		this->a = other.a;
 		this->b = other.b;
 	}
