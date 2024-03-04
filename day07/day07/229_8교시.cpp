@@ -2,6 +2,8 @@
 using namespace std;
 
 
+
+
 class Myclass {
 private:
 	char name[30];
@@ -19,7 +21,8 @@ public:
 
 int main(void)
 {
-	cout << MyInfo << endl;
+	cout << "¾Æ¹«Æ° ¹» ³Ö¾îºÁ" << endl;
+
 	return 0;
 }
 
