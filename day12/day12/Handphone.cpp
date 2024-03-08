@@ -2,7 +2,7 @@
 #include "Handphone.h"
 #include <iostream>
 
-Handphone::Handphone(int id, double price, const std::string& producer, const std::string& model, const std::string& RAM)
+Handphone::Handphone(int id, double price, const std::string& producer, const std::string& _model, const std::string& _RAM)
     : Product(id, price, producer), model(model), RAM(RAM) {}
 
 Handphone::~Handphone() {}

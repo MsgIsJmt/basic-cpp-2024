@@ -10,7 +10,7 @@ public:
     std::string author;
     std::string title;
 
-    Book(int id, double price, const std::string& producer, const std::string& ISBN, const std::string& author, const std::string& title);
+    Book(int id, double price, const std::string& producer, const std::string& _ISBN, const std::string& _author, const std::string& _title);
     virtual ~Book();
 
     virtual void display() const override;

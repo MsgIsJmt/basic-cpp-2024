@@ -83,34 +83,33 @@ void addProduct(std::vector<const Product*>& products, int productType) {
     std::cin >> id >> price;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Clear the input buffer
 
-    std::cout << "Producer 입력: ";
-    std::getline(std::cin, producer);
+
 
     if (productType == 1) {
-        std::string ISBN, author, title;
+        std::string _ISBN, _author, _title;
         std::cout << "책 정보를 입력하세요 (ISBN, Author, Title): ";
-        std::getline(std::cin, ISBN);
-        std::getline(std::cin, author);
-        std::getline(std::cin, title);
+        std::getline(std::cin, _ISBN);
+        std::getline(std::cin, _author);
+        std::getline(std::cin, _title);
 
-        products.push_back(new Book(id, price, producer, ISBN, author, title));
+        products.push_back(new Book(id, price, producer, _ISBN, _author, _title));
     }
     else if (productType == 2) {
-        std::string model, RAM;
+        std::string _model, _RAM;
         std::cout << "핸드폰 정보를 입력하세요 (Model, RAM): ";
-        std::getline(std::cin, model);
-        std::getline(std::cin, RAM);
+        std::getline(std::cin, _model);
+        std::getline(std::cin, _RAM);
 
-        products.push_back(new Handphone(id, price, producer, model, RAM));
+        products.push_back(new Handphone(id, price, producer, _model, _RAM));
     }
     else if (productType == 3) {
-        std::string model, cpu, RAM;
+        std::string _model, _cpu, _RAM;
         std::cout << "컴퓨터 정보를 입력하세요 (Model, CPU, RAM): ";
-        std::getline(std::cin, model);
-        std::getline(std::cin, cpu);
-        std::getline(std::cin, RAM);
+        std::getline(std::cin, _model);
+        std::getline(std::cin, _cpu);
+        std::getline(std::cin, _RAM);
 
-        products.push_back(new Computer(id, price, producer, model, cpu, RAM));
+        products.push_back(new Computer(id, price, producer, _model, _cpu, _RAM));
     }
     else {
         std::cout << "잘못된 상품 종류입니다." << std::endl;

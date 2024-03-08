@@ -9,7 +9,7 @@ public:
     std::string model;
     std::string RAM;
 
-    Handphone(int id, double price, const std::string& producer, const std::string& model, const std::string& RAM);
+    Handphone(int id, double price, const std::string& producer, const std::string& _model, const std::string& _RAM);
     virtual ~Handphone();
 
     virtual void display() const override;

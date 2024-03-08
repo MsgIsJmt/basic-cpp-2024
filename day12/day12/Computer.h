@@ -10,7 +10,7 @@ public:
     std::string cpu;
     std::string RAM;
 
-    Computer(int id, double price, const std::string& producer, const std::string& model, const std::string& cpu, const std::string& RAM);
+    Computer(int id, double price, const std::string& producer, const std::string& _model, const std::string& _cpu, const std::string& _RAM);
     virtual ~Computer();
 
     virtual void display() const override;
